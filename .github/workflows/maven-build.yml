@@ -18,8 +18,8 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'adopt'
-          cache: maven
+          distribution: 'oracle'
+          #cache: maven
 
       - name: Build with Maven Wrapper
-        run: ./mvnw -B package
+        run: ./mvn -B package
